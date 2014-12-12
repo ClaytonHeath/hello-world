@@ -52,16 +52,16 @@
               <?php if(!$userInfo): ?>
               <div class="login-box auth0-box before">
                 <img src="https://i.cloudup.com/StzWWrY34s.png" />
-                <h3>Auth0 Example</h3>
-                <p>Zero friction identity infrastructure, built for developers</p>
+                <h3>Clayton Auth0 Example</h3>
+                <p>Authenticates you in to a world of nothing</p>
                 <a class="btn btn-primary btn-lg btn-login btn-block">SignIn</a>
               </div>
               <?php else: ?>
               <div class="logged-in-box auth0-box logged-in">
                 <h1 id="logo"><img src="//cdn.auth0.com/samples/auth0_logo_final_blue_RGB.png" /></h1>
                 <img class="avatar" src="<?php echo $userInfo['picture'] ?>"/>
-                <h2>Welcome <span class="nickname"><?php echo $userInfo['nickname'] ?></span></h2>
-                <button class="btn btn-lg btn-primary btn-api">Call API</button>
+                <h2>Welcome <span class="nickname"><?php echo $userInfo['nickname'] ?></span> from <span class="nickname"><?php echo $userInfo['location'] ?> </h2>
+                <button class="btn btn-lg btn-primary btn-api">Something Cool Should Happen Next</button>
               </div>
               <?php endif ?>
             </div>
